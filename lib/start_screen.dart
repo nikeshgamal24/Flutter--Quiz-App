@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class StartScreen extends StatelessWidget {
-  const StartScreen(this.startQuiz,{super.key});
+  const StartScreen(this.startQuiz, {super.key});
 
   //we passed StartScreen a positional parameter i.e. a function to switch to the quiz
   final Function()? startQuiz;
@@ -42,7 +42,7 @@ class StartScreen extends StatelessWidget {
           //For the icon on the button or elsewhere we use like OutlinedButton.icon and can use icon property and use certain given icon to the place where we want to place the icon at
 
           OutlinedButton.icon(
-            //startQuiz contains the function that will change the activescreen to QuestionsScreen so the value startQuiz variable contains the function body 
+              //startQuiz contains the function that will change the activescreen to QuestionsScreen so the value startQuiz variable contains the function body
               onPressed: startQuiz,
               style: OutlinedButton.styleFrom(
                   padding: const EdgeInsets.all(10),
